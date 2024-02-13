@@ -1,5 +1,26 @@
 body {
-  color: brown;
+  width: 80%px;
+  height: 90%px;
   background-color: burlywood;
 }
+
+h1, a {
+text-align: center;
+font-weight: bold;
+}
+
+ul, li {
+border: 3px solid beige;
+font size: 20;
+}
+
+p {
+font-family: "serif";
+}
+
+img {
+width: 150% px;
+text-align: center;
+}
+
 
