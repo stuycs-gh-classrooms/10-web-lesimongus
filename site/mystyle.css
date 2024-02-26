@@ -20,13 +20,18 @@ p {
   padding: 25px;
 }
 
-li.notNav{
-  color: MidnightBlue;
-  font-family: "Verdana", sans-serif;
-  padding: 10px;
+ol,ul.notNav {
+border: 2px solid red;
 }
 
 img {
 float: left;
 }
+
+li.notNav {
+color: MidnightBlue;
+font-family: "Verdana", sans-serif;
+padding: 5px;
+}
+
 
