@@ -1,3 +1,8 @@
+@font-face {
+  font-family: tf2Font;
+  src: url(TF2.ttf);
+}
+
 body {
   background-color: beige;
 }
