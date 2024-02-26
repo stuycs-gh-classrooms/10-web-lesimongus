@@ -5,6 +5,7 @@
 
 body {
   background-color: beige;
+  
 }
 
 h1 {
@@ -19,13 +20,13 @@ p {
   padding: 25px;
 }
 
-li {
+li.notNav{
   color: MidnightBlue;
   font-family: "Verdana", sans-serif;
   padding: 10px;
 }
 
-ul {
+ul.notNav {
 border: 2px solid red;
 }
 
