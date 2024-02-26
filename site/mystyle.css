@@ -1,0 +1,19 @@
+body {
+  background-color: beige;
+}
+
+h1 {
+  text-align: center;
+  color: DarkOrange;
+}
+
+p {
+  color: SlateGrey;
+  font-family: "Verdana", sans-serif;
+}
+
+li {
+  color: MidnightBlue;
+  font-family: "Verdana", sans-serif;
+}
+
