@@ -37,4 +37,6 @@ font-family: "Verdana", sans-serif;
 padding: 5px;
 }
 
-
+ul.Nav {
+  list-style-type: none;
+}
