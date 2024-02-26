@@ -16,14 +16,20 @@ h1 {
 p {
   color: SlateGrey;
   font-family: "Verdana", sans-serif;
+  padding: 25px;
 }
 
 li {
   color: MidnightBlue;
   font-family: "Verdana", sans-serif;
+  padding: 10px;
+}
+
+ul {
+border: 2px solid red;
 }
 
 img {
-float: left
+float: left;
 }
 
