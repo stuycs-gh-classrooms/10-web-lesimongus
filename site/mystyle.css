@@ -5,7 +5,8 @@
 
 body {
   background-color: beige;
-  
+  border: 2px solid DarkOrange;
+  border-radius: 5px;  
 }
 
 h1 {
@@ -15,13 +16,15 @@ h1 {
 }
 
 p {
-  color: SlateGrey;
+  color: DarkSlateGrey;
   font-family: "Verdana", sans-serif;
   padding: 25px;
 }
 
 ol,ul.notNav {
 border: 2px solid red;
+border-radius: 5px;
+margin: 3px;
 }
 
 img {
