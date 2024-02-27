@@ -1,5 +1,5 @@
 html {
-background-color: black;
+background-color: bisque;
 }
 
 body {
@@ -29,6 +29,11 @@ img {
 float: left;
 }
 
+.smaller {
+length: 80%px;
+width: 80%px;
+}
+
 li.notNav {
 color: MidnightBlue;
 font-family: "Verdana", sans-serif;
@@ -37,4 +42,15 @@ padding: 5px;
 
 ul.Nav {
   list-style-type: none;
+}
+
+li.Nav {
+  background-color: orange;
+  display: inline-block;
+  border: 3px solid black;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  padding: 50px;
+  color: black;
 }
