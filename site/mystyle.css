@@ -1,6 +1,5 @@
-@font-face {
-  font-family: tf2Font;
-  src: url(TF2.ttf);
+html {
+background-color: black;
 }
 
 body {
@@ -11,7 +10,6 @@ body {
 
 h1 {
   text-align: center;
-  font-family: tf2Font;
   color: DarkOrange;
 }
 
