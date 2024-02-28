@@ -31,8 +31,7 @@ float: left;
 }
 
 .smaller {
-length: 60%px;
-width: 60%px;
+  object-fit: contain;
 }
 
 li.notNav {
