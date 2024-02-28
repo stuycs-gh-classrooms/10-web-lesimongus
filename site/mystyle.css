@@ -1,3 +1,8 @@
+@font-face {
+  font-family:TF2Font;
+  src: url(TF2.ttf);
+}
+
 html {
 background-color: bisque;
 }
@@ -11,7 +16,7 @@ body {
 h1 {
   text-align: center;
   color: DarkOrange;
-  font-family: "Verdana", sans-serif;
+  font-family: TF2Font;
 }
 
 p {
@@ -53,7 +58,7 @@ li.Nav {
 a.Nav {
   text-decoration: none;
   color: black;
-  font-family: "Verdana", sans-serif;
+  font-family: TF2Font;
   font-size: 24px;
 }
 
