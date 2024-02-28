@@ -17,7 +17,7 @@ h1 {
 p {
   color: DarkSlateGrey;
   font-family: "Verdana", sans-serif;
-  padding: 25px;
+  padding: 15px;
 }
 
 ol,ul.notNav {
@@ -28,10 +28,6 @@ margin: 3px;
 
 img {
 float: left;
-}
-
-.smaller {
-  object-fit: contain;
 }
 
 li.notNav {
