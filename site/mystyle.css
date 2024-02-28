@@ -50,7 +50,7 @@ li.Nav {
   border: 3px solid black;
   border-radius: 12px;
   text-align: center;
-  padding: 50px;
+  padding: 20px;
 }
 
 a.Nav {
@@ -60,3 +60,11 @@ a.Nav {
   font-size: 24px;
 }
 
+li.here {
+  background-color: black;
+  border: 3px solid orange;
+}
+
+a.here {
+ color: orange;
+}
