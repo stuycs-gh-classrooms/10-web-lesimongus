@@ -13,6 +13,40 @@
     <p>
       Here's the standard version of a koch curve: <pre><code>koch_standard(Oogway, 4, 20)</code></pre> 
       <image src="fractal_images/standard_koch_curve.png" alt="standard koch curve">
+      This is the modified koch curve. Each time the turtle draws a depth 1 koch curve, the turtle changes its pen color through generating a random rgb color code. As such, each line drawn is differently colored. Additionally, a new variable has been added to the parameters: vary. A number between 0 and vary will be generated, and that will be subtracted from the existing angle, effectively making it random how much the turtle will turn. If vary is zero, the turtle will simply draw a regular koch curve. Lastly, the function now requires a second turtle that will draw its own altered koch curve backwards.
+      <pre><code>
+Po = turtle.Turtle()
+def koch_variant(t, t1, depth, length, vary):
+    if depth == 1:
+        t.fd(length)
+        t1.bk(length)
+        t.color( (random.randrange(0, 255),random.randrange(0, 255),random.randrange(0, 255) ))
+        t1.color( (random.randrange(0, 255),random.randrange(0, 255),random.randrange(0, 255) ))
+    else:
+        koch_variant(t, t1, depth - 1, length, vary)
+        if vary == 0:
+            t.lt(60)
+            t1.rt(60)
+        else:
+            t.lt(60 - random.randrange(0, vary))
+            t1.rt(60 - random.randrange(0, vary))
+        koch_variant(t, t1, depth - 1, length, vary)
+        if vary == 0:
+            t.rt(120)
+            t.lt(120)
+        else:
+            t.rt(2*(60 - random.randrange(0, vary)))
+            t1.lt(2*(60 - random.randrange(0, vary)))
+        koch_variant(t, t1, depth - 1, length , vary)
+        if vary == 0:
+            t.lt(60)
+            t1.rt(60)
+        else:
+            t.lt(60 - random.randrange(0, vary))
+            t1.rt(60 - random.randrange(0, vary))
+        koch_variant(t, t1, depth - 1, length , vary)
+koch_variant(Oogway, Po, 4, 20, 10)
+</code></pre>
     </p>
   </body>
 
