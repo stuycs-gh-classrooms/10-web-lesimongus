@@ -8,7 +8,10 @@ color: GhostWhite;
 
 h1 {
 text-align: center;
-border-bottom: 3x solid DarkCyan;;
+border-bottom: 3px solid DarkCyan;
 }
 
-
+h2 {
+text-align: center;
+border-bottom: 1px dashed DarkCyan;
+}
