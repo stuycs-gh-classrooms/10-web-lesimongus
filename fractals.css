@@ -5,3 +5,10 @@ background-color: DarkSlateGray;
 body {
 color: GhostWhite;
 }
+
+h1 {
+text-align: center;
+border-bottom: 3x solid DarkCyan;;
+}
+
+
