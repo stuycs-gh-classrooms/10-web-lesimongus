@@ -59,6 +59,39 @@ koch_variant(Oogway, Po, 4, 20, 10)
 <h2>Sierpinski Triangle</h2>
 <p>The standard sierpinski triangle: <pre><code>sierpinski_standard(Oogway, 5, 200)</code></pre> </p>
 <img src="fractal_images/standard_sierpinski_triangle.png" alt="image of standard sierpinski triangle">
-  </body>
+<p>Here's the code for a modified version of the sierpinski triangle. Each triangle is in its regular position, however they have been flipped upside down. A variable, width, has also been added. The turtle changes its width each time it draws a depth 1 triangle, the width being randomly chosen from a number between 0 and the value put for the width variable.
+<pre><code>
+def sierpinski_variant(t, depth, length, width):
+    if depth == 1:
+        t.width(random.randrange(0, width))
+        t.rt(60)
+        t.fd(length)
+        t.lt(120)
+        t.fd(length)
+        t.lt(120)
+        t.fd(length)
+        t.lt(180)
+    else:
+        sierpinski_variant(t, depth - 1, length/2, width)
+        t.fd(length/2)
+        sierpinski_variant(t, depth - 1, length/2, width)
+        t.rt(60)
+        t.pu()
+        t.bk(length/2)
+        t.pd()
+        t.lt(60)
+        sierpinski_variant(t, depth - 1, length/2, width)
+        t.rt(60)
+        t.pu()
+        t.fd(length/2)
+        t.pd()
+        t.lt(60)
+        t.bk(length/2)
+sierpinski_variant(Oogway, 5, 200, 5)
+</code></pre>
+<img src="fractal_images/Sierpinski_Variant.png" alt="altered sierpinski triangle">
+</div>
+<hr>
+</body>
 
 </html>
