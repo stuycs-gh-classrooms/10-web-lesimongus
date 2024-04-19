@@ -93,7 +93,48 @@ sierpinski_variant(Oogway, 5, 200, 5)
 </div>
 <hr>
 <div>
+<h2>Fractal Tree</h2>
 <p>This is the standard version of a fractal tree. <pre><code>tree_standard(Oogway, 4, 50, 20)</code></pre> </p>
+<img src="fractal_images/standard_tree.png" alt="standard fractal tree">
+<p>The following is the code and the image of the modified code of the fractal tree. The depth 1 fractal tree has been changed to a koch curve, and a new variable has been added to the function that determines the koch curve's depth. The pencolor of the depth 1 fractal tree is green, and the pencolor of the higher depths starts as brown to help depict a tree. Additionally, the turtle's width is set to the depth of the function, meaning the width will decrease as the function goes through the lower depths. The code of a standard koch curve is also provided, as the koch curve is crucial to the modified fractal tree. </p>
+<pre><code>
+def koch_standard(t, depth, length):
+    if depth == 1:
+        t.fd(length)
+    else:
+        koch_standard(t, depth - 1, length)
+        t.lt(60)
+        koch_standard(t, depth - 1, length)
+        t.rt(120)
+        koch_standard(t, depth - 1, length)
+        t.lt(60)
+        koch_standard(t, depth - 1, length)
+
+def tree_variant(t, depth, length, angle, mod):
+    if depth == 1:
+        t.pencolor('green')
+        koch_standard(t, depth * mod, length)
+        t.rt(180)
+        koch_standard(t, depth * mod, length)
+        t.rt(180)
+    else:
+        t.width(depth)
+        t.pencolor('brown')
+        t.fd(length * depth)
+        t.rt(angle)
+        t.width(1)
+        tree_variant(t, depth - 1, length, angle, mod)
+        t.lt(angle * 2)
+        tree_variant(t, depth - 1, length, angle, mod)
+        t.rt(angle)
+        t.bk(length * depth)
+Oogway.pu()
+Oogway.sety(-300)
+Oogway.pd()
+tree_variant(Oogway, 4, 30, 20, 3)
+</code></pre>
+<img src="fractal_images/Tree_Variant.png" alt="altered fractal tree">
+</div>
 </body>
 
 </html>
