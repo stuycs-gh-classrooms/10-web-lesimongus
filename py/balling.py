@@ -23,9 +23,6 @@ HTML_FOOTER = """
 </html>
 """
 
-roll = randint(1, 20)
-print(roll)
-
 data = cgi.FieldStorage()
 name = 'you nameless loser'
 gender = 'This does matter'
@@ -39,5 +36,6 @@ if ('identity' in data):
 
 html= HTML_HEADER
 html+= '<h1>Awaken, ' + name + '</h1>'
+html+= '<br><a href="Title Pending.html">Try Again</a>'
 html+= HTML_FOOTER
 print(html)
