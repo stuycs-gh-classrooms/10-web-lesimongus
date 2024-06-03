@@ -8,7 +8,7 @@ import cgi
 
 from random import randint
 
-header = """
+HTML_HEADER = """
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +18,7 @@ header = """
 </head>
 """
 
-footer = """
+HTML_FOOTER = """
 </body>
 </html>
 """
@@ -37,7 +37,7 @@ if ('gender' in data):
 if ('identity' in data):
     identity = data['identity'].value
 
-html= header
+html= HTML_HEADER
 html+= '<h1>Awaken, ' + name + '</h1>'
-html+= footer
+html+= HTML_FOOTER
 print(html)
