@@ -28,8 +28,14 @@ print(roll)
 
 data = cgi.FieldStorage()
 name = 'you nameless loser'
+gender = 'This does matter'
+identity = "You didn't, actually"
 if ('name' in data):
     name = data['name'].value
+if ('gender' in data):
+    gender = data['gender'].value
+if ('identity' in data):
+    identity = data['identity'].value
 
 html= header
 html+= '<h1>Awaken, ' + name + '</h1>'
