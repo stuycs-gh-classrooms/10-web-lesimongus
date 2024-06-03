@@ -14,7 +14,7 @@ header = """
 
 <head>
 <meta charset="utf-8">
-<title>Hello</title>
+<title>Can you really call this an rpg i didn't receive a sword on my birthday or anythi</title>
 </head>
 """
 
@@ -25,3 +25,13 @@ footer = """
 
 roll = randint(1, 20)
 print(roll)
+
+data = cgi.FieldStorage()
+name = 'you nameless loser'
+if ('name' in data):
+    name = data['name'].value
+
+html= header
+html+= '<h1>Awaken, ' + name + '</h1>'
+html+= footer
+print(html)
