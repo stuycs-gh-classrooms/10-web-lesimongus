@@ -25,12 +25,12 @@ HTML_FOOTER = """
 
 data = cgi.FieldStorage()
 name = 'you nameless loser'
-gender = 'This does matter'
-identity = "You didn't, actually"
 if ('name' in data):
     name = data['name'].value
+gender = 'This does matter'
 if ('gender' in data):
     gender = data['gender'].value
+identity = "You didn't, actually"
 if ('identity' in data):
     identity = data['identity'].value
 
