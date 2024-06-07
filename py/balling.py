@@ -22,7 +22,7 @@ HTML_FOOTER = """
 """
 
 data = cgi.FieldStorage()
-name = 'you nameless loser'
+name = 'egg'
 if ('name' in data):
     name = data['name'].value
 
