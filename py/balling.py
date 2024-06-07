@@ -6,8 +6,6 @@ cgitb.enable()
 
 import cgi
 
-from random import randint
-
 HTML_HEADER = """
 <!DOCTYPE html>
 <html lang="en">
