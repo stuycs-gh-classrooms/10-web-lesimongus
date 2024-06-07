@@ -34,7 +34,7 @@ def choices(options, subject, question):
     buttons = ''
     for stuff in options:
         choice = '<div>'
-        choice += 'input type="radio" name="' + subject + '"value="' + stuff + '">'
+        choice += '<input type="radio" name="' + subject + '"value="' + stuff + '">'
         choice+= stuff + '</div>'
         buttons+= choice
     form+= buttons
