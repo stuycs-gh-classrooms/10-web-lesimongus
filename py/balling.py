@@ -27,12 +27,6 @@ data = cgi.FieldStorage()
 name = 'you nameless loser'
 if ('name' in data):
     name = data['name'].value
-gender = 'This does matter'
-if ('gender' in data):
-    gender = data['gender'].value
-identity = "You didn't, actually"
-if ('identity' in data):
-    identity = data['identity'].value
 
 html= HTML_HEADER
 html+= '<h1>Awaken, ' + name + '</h1>'
